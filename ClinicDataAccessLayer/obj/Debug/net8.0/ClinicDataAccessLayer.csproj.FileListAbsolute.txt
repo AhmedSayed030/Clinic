@@ -1,0 +1,14 @@
+D:\Projectes\ClinicDataAccessLayer\bin\Debug\net8.0\ClinicDataAccessLayer.deps.json
+D:\Projectes\ClinicDataAccessLayer\bin\Debug\net8.0\ClinicDataAccessLayer.runtimeconfig.json
+D:\Projectes\ClinicDataAccessLayer\bin\Debug\net8.0\ClinicDataAccessLayer.dll
+D:\Projectes\ClinicDataAccessLayer\bin\Debug\net8.0\ClinicDataAccessLayer.pdb
+D:\Projectes\ClinicDataAccessLayer\obj\Debug\net8.0\ClinicDataAccessLayer.csproj.AssemblyReference.cache
+D:\Projectes\ClinicDataAccessLayer\obj\Debug\net8.0\ClinicDataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projectes\ClinicDataAccessLayer\obj\Debug\net8.0\ClinicDataAccessLayer.AssemblyInfoInputs.cache
+D:\Projectes\ClinicDataAccessLayer\obj\Debug\net8.0\ClinicDataAccessLayer.AssemblyInfo.cs
+D:\Projectes\ClinicDataAccessLayer\obj\Debug\net8.0\ClinicDataAccessLayer.csproj.CoreCompileInputs.cache
+D:\Projectes\ClinicDataAccessLayer\obj\Debug\net8.0\ClinicDataAccessLayer.dll
+D:\Projectes\ClinicDataAccessLayer\obj\Debug\net8.0\refint\ClinicDataAccessLayer.dll
+D:\Projectes\ClinicDataAccessLayer\obj\Debug\net8.0\ClinicDataAccessLayer.pdb
+D:\Projectes\ClinicDataAccessLayer\obj\Debug\net8.0\ClinicDataAccessLayer.genruntimeconfig.cache
+D:\Projectes\ClinicDataAccessLayer\obj\Debug\net8.0\ref\ClinicDataAccessLayer.dll

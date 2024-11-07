@@ -1,0 +1,189 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Projectes\\Clinic\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{28095438-24FC-436B-BD25-426DAD839ED1}|..\\ClinicDataBusinessLayer\\ClinicDataBusinessLayer.csproj|d:\\projectes\\clinicdatabusinesslayer\\validation\\payment\\paymentdtoupdatevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28095438-24FC-436B-BD25-426DAD839ED1}|..\\ClinicDataBusinessLayer\\ClinicDataBusinessLayer.csproj|d:\\projectes\\clinicdatabusinesslayer\\services\\serviceresults\\messages\\servicemessages\\paymentservicemessages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28095438-24FC-436B-BD25-426DAD839ED1}|..\\ClinicDataBusinessLayer\\ClinicDataBusinessLayer.csproj|d:\\projectes\\clinicdatabusinesslayer\\validation\\payment\\paymentdtoaddvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28095438-24FC-436B-BD25-426DAD839ED1}|..\\ClinicDataBusinessLayer\\ClinicDataBusinessLayer.csproj|d:\\projectes\\clinicdatabusinesslayer\\resources\\payemntmessages.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28095438-24FC-436B-BD25-426DAD839ED1}|..\\ClinicDataBusinessLayer\\ClinicDataBusinessLayer.csproj|d:\\projectes\\clinicdatabusinesslayer\\resources\\payemntmessages.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA934766-D61E-443C-BA27-C3FBAE5E3220}|ClinicApi.csproj|d:\\projectes\\clinic\\controllers\\payemntcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA934766-D61E-443C-BA27-C3FBAE5E3220}|ClinicApi.csproj|solutionrelative:controllers\\payemntcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28095438-24FC-436B-BD25-426DAD839ED1}|..\\ClinicDataBusinessLayer\\ClinicDataBusinessLayer.csproj|d:\\projectes\\clinicdatabusinesslayer\\clinicdatabusinesslayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28095438-24FC-436B-BD25-426DAD839ED1}|..\\ClinicDataBusinessLayer\\ClinicDataBusinessLayer.csproj|d:\\projectes\\clinicdatabusinesslayer\\services\\payemntservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 313,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:10:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PaymentServiceMessages.cs",
+              "DocumentMoniker": "D:\\Projectes\\ClinicDataBusinessLayer\\Services\\ServiceResults\\Messages\\ServiceMessages\\PaymentServiceMessages.cs",
+              "RelativeDocumentMoniker": "..\\ClinicDataBusinessLayer\\Services\\ServiceResults\\Messages\\ServiceMessages\\PaymentServiceMessages.cs",
+              "ToolTip": "D:\\Projectes\\ClinicDataBusinessLayer\\Services\\ServiceResults\\Messages\\ServiceMessages\\PaymentServiceMessages.cs",
+              "RelativeToolTip": "..\\ClinicDataBusinessLayer\\Services\\ServiceResults\\Messages\\ServiceMessages\\PaymentServiceMessages.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAWwA8AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T01:13:31.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PaymentDtoUpdateValidator.cs",
+              "DocumentMoniker": "D:\\Projectes\\ClinicDataBusinessLayer\\Validation\\Payment\\PaymentDtoUpdateValidator.cs",
+              "RelativeDocumentMoniker": "..\\ClinicDataBusinessLayer\\Validation\\Payment\\PaymentDtoUpdateValidator.cs",
+              "ToolTip": "D:\\Projectes\\ClinicDataBusinessLayer\\Validation\\Payment\\PaymentDtoUpdateValidator.cs",
+              "RelativeToolTip": "..\\ClinicDataBusinessLayer\\Validation\\Payment\\PaymentDtoUpdateValidator.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAArwB0AAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T01:13:28.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PaymentDtoAddValidator.cs",
+              "DocumentMoniker": "D:\\Projectes\\ClinicDataBusinessLayer\\Validation\\Payment\\PaymentDtoAddValidator.cs",
+              "RelativeDocumentMoniker": "..\\ClinicDataBusinessLayer\\Validation\\Payment\\PaymentDtoAddValidator.cs",
+              "ToolTip": "D:\\Projectes\\ClinicDataBusinessLayer\\Validation\\Payment\\PaymentDtoAddValidator.cs",
+              "RelativeToolTip": "..\\ClinicDataBusinessLayer\\Validation\\Payment\\PaymentDtoAddValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T01:13:26.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PayemntMessages.resx",
+              "DocumentMoniker": "D:\\Projectes\\ClinicDataBusinessLayer\\Resources\\PayemntMessages.resx",
+              "RelativeDocumentMoniker": "..\\ClinicDataBusinessLayer\\Resources\\PayemntMessages.resx",
+              "ToolTip": "D:\\Projectes\\ClinicDataBusinessLayer\\Resources\\PayemntMessages.resx",
+              "RelativeToolTip": "..\\ClinicDataBusinessLayer\\Resources\\PayemntMessages.resx",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAEwHoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-11-07T01:13:24.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PayemntMessages.Designer.cs",
+              "DocumentMoniker": "D:\\Projectes\\ClinicDataBusinessLayer\\Resources\\PayemntMessages.Designer.cs",
+              "RelativeDocumentMoniker": "..\\ClinicDataBusinessLayer\\Resources\\PayemntMessages.Designer.cs",
+              "ToolTip": "D:\\Projectes\\ClinicDataBusinessLayer\\Resources\\PayemntMessages.Designer.cs",
+              "RelativeToolTip": "..\\ClinicDataBusinessLayer\\Resources\\PayemntMessages.Designer.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAWwCkAAACbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T01:12:42.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PayemntController.cs",
+              "DocumentMoniker": "D:\\Projectes\\Clinic\\Controllers\\PayemntController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PayemntController.cs",
+              "ToolTip": "D:\\Projectes\\Clinic\\Controllers\\PayemntController.cs",
+              "RelativeToolTip": "Controllers\\PayemntController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAqwA4AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T01:12:32.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ClinicDataBusinessLayer",
+              "DocumentMoniker": "D:\\Projectes\\ClinicDataBusinessLayer\\ClinicDataBusinessLayer.csproj",
+              "RelativeDocumentMoniker": "..\\ClinicDataBusinessLayer\\ClinicDataBusinessLayer.csproj",
+              "ToolTip": "D:\\Projectes\\ClinicDataBusinessLayer\\ClinicDataBusinessLayer.csproj",
+              "RelativeToolTip": "..\\ClinicDataBusinessLayer\\ClinicDataBusinessLayer.csproj",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAEwFwAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-07T01:12:06.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PayemntService.cs",
+              "DocumentMoniker": "D:\\Projectes\\ClinicDataBusinessLayer\\Services\\PayemntService.cs",
+              "RelativeDocumentMoniker": "..\\ClinicDataBusinessLayer\\Services\\PayemntService.cs",
+              "ToolTip": "D:\\Projectes\\ClinicDataBusinessLayer\\Services\\PayemntService.cs",
+              "RelativeToolTip": "..\\ClinicDataBusinessLayer\\Services\\PayemntService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T01:09:00.947Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 147,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 216,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
