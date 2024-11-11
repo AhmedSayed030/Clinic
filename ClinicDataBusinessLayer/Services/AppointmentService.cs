@@ -72,13 +72,13 @@ public class AppointmentService : ServiceBase, IAppointmentService, IScopedServi
 
         return await ExecuteOperationAsync<TDtoResult, AppointmentServiceErrorMessages>(async serviceResult =>
         {
-            var appointments = await _context.Appointments
+            var appointment = await _context.Appointments
                 .Where(a => a.Id == id)
                 .ToDtoAsync<TDtoResult>(_mapper.ConfigurationProvider);
 
-            return appointments is null ? 
+            return appointment is null ? 
                 serviceResult.NotFound<TDtoResult>(id) : 
-                serviceResult.Success(appointments);
+                serviceResult.Success(appointment);
 
         }, nameof(GetById));
     }
