@@ -8,8 +8,8 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddFluentValidationAutoValidation();
 
-var connectionString = Environment.GetEnvironmentVariable("DefaultConnection") 
-                       ?? builder.Configuration.GetConnectionString("DefaultConnection");
+var connectionString = Environment.GetEnvironmentVariable("DefaultConnection") ?? 
+                       builder.Configuration.GetConnectionString("DefaultConnection");
 
 builder.Services.AddDtaAccessLayerServices(connectionString);
 builder.Services.AddBusinessLayerServices();
