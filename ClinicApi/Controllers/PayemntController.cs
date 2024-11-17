@@ -11,7 +11,7 @@ public class PaymentController : ControllerBase
         _paymentService = paymentService;
     }
 
-    [HttpGet()]
+    [HttpGet]
     public async Task<IActionResult> GetAll()
     {
         var result = await _paymentService.GetAll<PaymentDto>();

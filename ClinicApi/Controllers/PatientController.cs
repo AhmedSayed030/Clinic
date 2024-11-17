@@ -11,7 +11,7 @@ public class PatientController : ControllerBase
         _patientService = patientService;
     }
 
-    [HttpGet()]
+    [HttpGet]
     public async Task<IActionResult> GetAll()
     {
         var result = await _patientService.GetAll<PatientDto>();

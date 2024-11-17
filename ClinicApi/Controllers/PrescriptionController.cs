@@ -11,7 +11,7 @@ public class PrescriptionController : ControllerBase
         _prescriptionService = prescriptionService;
     }
 
-    [HttpGet()]
+    [HttpGet]
     public async Task<IActionResult> GetAll()
     {
         var result = await _prescriptionService.GetAll<PrescriptionDto>();
