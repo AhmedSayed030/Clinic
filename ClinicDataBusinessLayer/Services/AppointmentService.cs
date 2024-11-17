@@ -76,9 +76,9 @@ public class AppointmentService : ServiceBase, IAppointmentService, IScopedServi
                 .Where(a => a.Id == id)
                 .ToDtoAsync<TDtoResult>(_mapper.ConfigurationProvider);
 
-            return appointment is null ? 
-                serviceResult.NotFound<TDtoResult>(id) : 
-                serviceResult.Success(appointment);
+            return appointment is null 
+                ? serviceResult.NotFound<TDtoResult>(id) 
+                : serviceResult.Success(appointment);
 
         }, nameof(GetById));
     }
@@ -92,9 +92,9 @@ public class AppointmentService : ServiceBase, IAppointmentService, IScopedServi
 
             await _context.SaveChangesAsync();
 
-            return AreDtoToEntryPathsCompatible<Appointment, TDtoAdd, TDtoResult>() ?
-                serviceResult.Success(_mapper.Map<TDtoResult>(appointment)) :
-                await GetById<TDtoResult>(appointment.Id);
+            return AreDtoToEntryPathsCompatible<Appointment, TDtoAdd, TDtoResult>()
+                ? serviceResult.Success(_mapper.Map<TDtoResult>(appointment))
+                : await GetById<TDtoResult>(appointment.Id);
 
         }, nameof(Add));
     }
@@ -115,9 +115,9 @@ public class AppointmentService : ServiceBase, IAppointmentService, IScopedServi
 
             await _context.SaveChangesAsync();
 
-            return AreDtoToEntryPathsCompatible<Appointment, TDtoUpdate, TDtoResult>() ?
-                serviceResult.Success(_mapper.Map<TDtoResult>(appointment)) :
-                await GetById<TDtoResult>(appointment.Id);
+            return AreDtoToEntryPathsCompatible<Appointment, TDtoUpdate, TDtoResult>()
+                ? serviceResult.Success(_mapper.Map<TDtoResult>(appointment))
+                : await GetById<TDtoResult>(appointment.Id);
 
         }, nameof(Update));
     }

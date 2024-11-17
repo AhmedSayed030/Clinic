@@ -38,9 +38,9 @@ public class PaymentService : ServiceBase, IPaymentService, IScopedService
                 .Where(p => p.Id == id)
                 .ToDtoAsync<TDtoResult>(_mapper.ConfigurationProvider);
 
-            return payment is null ?
-                serviceResult.NotFound<TDtoResult>(id) : 
-                serviceResult.Success(payment);
+            return payment is null 
+                ? serviceResult.NotFound<TDtoResult>(id) 
+                : serviceResult.Success(payment);
 
         }, nameof(GetById));
     }
@@ -54,9 +54,9 @@ public class PaymentService : ServiceBase, IPaymentService, IScopedService
 
             await _context.SaveChangesAsync();
 
-            return AreDtoToEntryPathsCompatible<Payment, TDtoAdd, TDtoResult>() ?
-                serviceResult.Success(_mapper.Map<TDtoResult>(payment)) :
-                await GetById<TDtoResult>(payment.Id);
+            return AreDtoToEntryPathsCompatible<Payment, TDtoAdd, TDtoResult>()
+                ? serviceResult.Success(_mapper.Map<TDtoResult>(payment))
+                : await GetById<TDtoResult>(payment.Id);
 
         }, nameof(Add));
     }
@@ -77,9 +77,9 @@ public class PaymentService : ServiceBase, IPaymentService, IScopedService
 
             await _context.SaveChangesAsync();
 
-            return AreDtoToEntryPathsCompatible<Payment, TDtoUpdate, TDtoResult>() ?
-                serviceResult.Success(_mapper.Map<TDtoResult>(payment)) :
-                await GetById<TDtoResult>(payment.Id);
+            return AreDtoToEntryPathsCompatible<Payment, TDtoUpdate, TDtoResult>()
+                ? serviceResult.Success(_mapper.Map<TDtoResult>(payment))
+                : await GetById<TDtoResult>(payment.Id);
 
         }, nameof(Update));
     }

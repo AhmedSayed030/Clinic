@@ -40,9 +40,9 @@ public class PatientService : ServiceBase, IPatientService, IScopedService
                 .Where(p => p.Id == id)
                 .ToDtoAsync<TDtoResult>(_mapper.ConfigurationProvider);
 
-            return patient is null ? 
-                serviceResult.NotFound<TDtoResult>(id) : 
-                serviceResult.Success(patient);
+            return patient is null 
+                ? serviceResult.NotFound<TDtoResult>(id) 
+                : serviceResult.Success(patient);
 
         }, nameof(GetById));
     }
@@ -56,9 +56,9 @@ public class PatientService : ServiceBase, IPatientService, IScopedService
 
             await _context.SaveChangesAsync();
 
-            return AreDtoToEntryPathsCompatible<Patient, TDtoAdd, TDtoResult>() ?
-                serviceResult.Success(_mapper.Map<TDtoResult>(patient)) :
-                await GetById<TDtoResult>(patient.Id);
+            return AreDtoToEntryPathsCompatible<Patient, TDtoAdd, TDtoResult>()
+                ? serviceResult.Success(_mapper.Map<TDtoResult>(patient))
+                : await GetById<TDtoResult>(patient.Id);
 
         }, nameof(Add));
     }
@@ -80,9 +80,9 @@ public class PatientService : ServiceBase, IPatientService, IScopedService
 
             await _context.SaveChangesAsync();
 
-            return AreDtoToEntryPathsCompatible<Patient, TDtoUpdate, TDtoResult>() ?
-                serviceResult.Success(_mapper.Map<TDtoResult>(patient)) :
-                await GetById<TDtoResult>(patient.Id);
+            return AreDtoToEntryPathsCompatible<Patient, TDtoUpdate, TDtoResult>()
+                ? serviceResult.Success(_mapper.Map<TDtoResult>(patient))
+                : await GetById<TDtoResult>(patient.Id);
 
         }, nameof(Update));
     }
