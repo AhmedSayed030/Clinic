@@ -28,43 +28,6 @@ public class AppointmentService : ServiceBase, IAppointmentService, IScopedServi
 
         }, nameof(GetAll));
     }
-    public async Task<IServiceResult<IEnumerable<TDtoResult>>> GetByPatientId<TDtoResult>(int id)
-        where TDtoResult : class, IAppointmentDto
-    {
-
-        return await ExecuteOperationAsync<IEnumerable<TDtoResult>, PatientServiceErrorMessages>(async serviceResult =>
-        {
-            if (await _context.Patients.IsNotExist(id))
-                return serviceResult.NotFound<IEnumerable<TDtoResult>>(id);
-            
-            var appointment = await _context.Appointments
-                .OrderBy(a => a.Id)
-                .Where(a => a.PatientId == id)
-                .ToDtoListAsync<TDtoResult>(_mapper.ConfigurationProvider);
-
-            return serviceResult.Success(appointment);
-
-        }, nameof(GetByPatientId));
-
-    }
-    public async Task<IServiceResult<IEnumerable<TDtoResult>>> GetByDoctorId<TDtoResult>(int id)
-        where TDtoResult : class, IAppointmentDto
-    {
-        return await ExecuteOperationAsync<IEnumerable<TDtoResult>, DoctorServiceErrorMessages>(async serviceResult =>
-        {
-            if (await _context.Doctors.IsNotExist(id))
-                return serviceResult.NotFound<IEnumerable<TDtoResult>>(id);
-
-            var appointments = await _context.Appointments
-                .OrderBy(a => a.Id)
-                .Where(a => a.DoctorId == id)
-                .ToDtoListAsync<TDtoResult>(_mapper.ConfigurationProvider);
-
-            return serviceResult.Success(appointments);
-
-        }, nameof(GetByDoctorId));
-    }
-
 
     public async Task<IServiceResult<TDtoResult>> GetById<TDtoResult>(int id)
         where TDtoResult : class, IAppointmentDto
@@ -138,6 +101,43 @@ public class AppointmentService : ServiceBase, IAppointmentService, IScopedServi
             return serviceResult.Success();
 
         }, nameof(Delete));
+    }
+
+    public async Task<IServiceResult<IEnumerable<TDtoResult>>> GetByPatientId<TDtoResult>(int id)
+        where TDtoResult : class, IAppointmentDto
+    {
+
+        return await ExecuteOperationAsync<IEnumerable<TDtoResult>, PatientServiceErrorMessages>(async serviceResult =>
+        {
+            if (await _context.Patients.IsNotExist(id))
+                return serviceResult.NotFound<IEnumerable<TDtoResult>>(id);
+            
+            var appointment = await _context.Appointments
+                .OrderBy(a => a.Id)
+                .Where(a => a.PatientId == id)
+                .ToDtoListAsync<TDtoResult>(_mapper.ConfigurationProvider);
+
+            return serviceResult.Success(appointment);
+
+        }, nameof(GetByPatientId));
+
+    }
+    public async Task<IServiceResult<IEnumerable<TDtoResult>>> GetByDoctorId<TDtoResult>(int id)
+        where TDtoResult : class, IAppointmentDto
+    {
+        return await ExecuteOperationAsync<IEnumerable<TDtoResult>, DoctorServiceErrorMessages>(async serviceResult =>
+        {
+            if (await _context.Doctors.IsNotExist(id))
+                return serviceResult.NotFound<IEnumerable<TDtoResult>>(id);
+
+            var appointments = await _context.Appointments
+                .OrderBy(a => a.Id)
+                .Where(a => a.DoctorId == id)
+                .ToDtoListAsync<TDtoResult>(_mapper.ConfigurationProvider);
+
+            return serviceResult.Success(appointments);
+
+        }, nameof(GetByDoctorId));
     }
 
 }

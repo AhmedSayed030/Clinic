@@ -4,13 +4,7 @@ public interface IAppointmentService
 {
     Task<IServiceResult<IEnumerable<TDtoResult>>> GetAll<TDtoResult>()
         where TDtoResult : class, IAppointmentDto;
-
-    Task<IServiceResult<IEnumerable<TDtoResult>>> GetByPatientId<TDtoResult>(int id)
-        where TDtoResult : class, IAppointmentDto;
-
-    Task<IServiceResult<IEnumerable<TDtoResult>>> GetByDoctorId<TDtoResult>(int id)
-        where TDtoResult : class, IAppointmentDto;
-
+    
     Task<IServiceResult<TDtoResult>> GetById<TDtoResult>(int id)
         where TDtoResult : class, IAppointmentDto;
 
@@ -23,4 +17,9 @@ public interface IAppointmentService
         where TDtoUpdate : class, IAppointmentDtoUpdate;
 
     Task<IServiceResult> Delete(int id);
+    Task<IServiceResult<IEnumerable<TDtoResult>>> GetByPatientId<TDtoResult>(int id)
+        where TDtoResult : class, IAppointmentDto;
+
+    Task<IServiceResult<IEnumerable<TDtoResult>>> GetByDoctorId<TDtoResult>(int id)
+        where TDtoResult : class, IAppointmentDto;
 }
